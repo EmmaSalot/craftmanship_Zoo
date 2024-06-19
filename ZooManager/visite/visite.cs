@@ -1,10 +1,10 @@
-public class Visite
+public class Visite : IVisite
 {
     public int Id { get; set; }
     public DateTime Date { get; set; }
     public TimeSpan HeureDebut { get; set; }
     public TimeSpan HeureFin { get; set; }
-    public List<Enclos> Enclos { get; set; }
+    public List<IEnclos> Enclos { get; set; } = new List<IEnclos>();
 
     public bool EstValide()
     {

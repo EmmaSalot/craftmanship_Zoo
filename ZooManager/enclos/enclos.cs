@@ -1,13 +1,15 @@
-public class Enclos
+public class Enclos : IEnclos
 {
     public int Id { get; set; }
     public string Nom { get; set; }
-    public string Taille { get; set; } // Petit, Moyen, Grand
-    public List<string> EspecesPermises { get; set; }
-    public List<Animal> Animaux { get; set; } = new List<Animal>();
+    public string Taille { get; set; }
+    public List<string> EspecesPermises { get; set; } = new List<string>();
+    public List<IAnimal> Animaux { get; set; } = new List<IAnimal>();
 
-    public bool PeutAccueillir(Animal animal)
+    public bool PeutAccueillir(IAnimal animal)
     {
         return EspecesPermises.Contains(animal.Espece);
     }
+
+    public bool EstVide => !Animaux.Any();
 }
