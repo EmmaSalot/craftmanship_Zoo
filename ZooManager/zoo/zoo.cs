@@ -4,20 +4,12 @@ public class Zoo
     private List<Enclos> enclos = new List<Enclos>();
     private List<Visite> visites = new List<Visite>();
 
-    public void AjouterAnimal(Animal animal)
-    {
-    }
-
     public void AjouterEnclos(Enclos enclos)
     {
     }
 
-    public void AjouterVisite(Visite visite)
+    public List<Enclos> ObtenirEnclos()
     {
-    }
-
-    public List<Animal> ObtenirAnimaux()
-    {
-        return animaux;
+        return enclos;
     }
 }
