@@ -1,0 +1,14 @@
+D:\DOC IMPORTANT\2023-2024\archiLogiciel\Zoo\craftmanship_Zoo\ZooManager\bin\Debug\net7.0\ZooManager.exe
+D:\DOC IMPORTANT\2023-2024\archiLogiciel\Zoo\craftmanship_Zoo\ZooManager\bin\Debug\net7.0\ZooManager.deps.json
+D:\DOC IMPORTANT\2023-2024\archiLogiciel\Zoo\craftmanship_Zoo\ZooManager\bin\Debug\net7.0\ZooManager.runtimeconfig.json
+D:\DOC IMPORTANT\2023-2024\archiLogiciel\Zoo\craftmanship_Zoo\ZooManager\bin\Debug\net7.0\ZooManager.dll
+D:\DOC IMPORTANT\2023-2024\archiLogiciel\Zoo\craftmanship_Zoo\ZooManager\bin\Debug\net7.0\ZooManager.pdb
+D:\DOC IMPORTANT\2023-2024\archiLogiciel\Zoo\craftmanship_Zoo\ZooManager\obj\Debug\net7.0\ZooManager.GeneratedMSBuildEditorConfig.editorconfig
+D:\DOC IMPORTANT\2023-2024\archiLogiciel\Zoo\craftmanship_Zoo\ZooManager\obj\Debug\net7.0\ZooManager.AssemblyInfoInputs.cache
+D:\DOC IMPORTANT\2023-2024\archiLogiciel\Zoo\craftmanship_Zoo\ZooManager\obj\Debug\net7.0\ZooManager.AssemblyInfo.cs
+D:\DOC IMPORTANT\2023-2024\archiLogiciel\Zoo\craftmanship_Zoo\ZooManager\obj\Debug\net7.0\ZooManager.csproj.CoreCompileInputs.cache
+D:\DOC IMPORTANT\2023-2024\archiLogiciel\Zoo\craftmanship_Zoo\ZooManager\obj\Debug\net7.0\ZooManager.dll
+D:\DOC IMPORTANT\2023-2024\archiLogiciel\Zoo\craftmanship_Zoo\ZooManager\obj\Debug\net7.0\refint\ZooManager.dll
+D:\DOC IMPORTANT\2023-2024\archiLogiciel\Zoo\craftmanship_Zoo\ZooManager\obj\Debug\net7.0\ZooManager.pdb
+D:\DOC IMPORTANT\2023-2024\archiLogiciel\Zoo\craftmanship_Zoo\ZooManager\obj\Debug\net7.0\ZooManager.genruntimeconfig.cache
+D:\DOC IMPORTANT\2023-2024\archiLogiciel\Zoo\craftmanship_Zoo\ZooManager\obj\Debug\net7.0\ref\ZooManager.dll
