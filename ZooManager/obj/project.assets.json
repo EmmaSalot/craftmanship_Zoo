@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DOC IMPORTANT\\2023-2024\\archiLogiciel\\Zoo\\ZooManager\\ZooManager.csproj",
+      "projectUniqueName": "D:\\DOC IMPORTANT\\2023-2024\\archiLogiciel\\Zoo\\craftmanship_Zoo\\ZooManager\\ZooManager.csproj",
       "projectName": "ZooManager",
-      "projectPath": "D:\\DOC IMPORTANT\\2023-2024\\archiLogiciel\\Zoo\\ZooManager\\ZooManager.csproj",
+      "projectPath": "D:\\DOC IMPORTANT\\2023-2024\\archiLogiciel\\Zoo\\craftmanship_Zoo\\ZooManager\\ZooManager.csproj",
       "packagesPath": "C:\\Users\\requi\\.nuget\\packages\\",
-      "outputPath": "D:\\DOC IMPORTANT\\2023-2024\\archiLogiciel\\Zoo\\ZooManager\\obj\\",
+      "outputPath": "D:\\DOC IMPORTANT\\2023-2024\\archiLogiciel\\Zoo\\craftmanship_Zoo\\ZooManager\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\requi\\AppData\\Roaming\\NuGet\\NuGet.Config"

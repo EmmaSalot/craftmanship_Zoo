@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "z/WXMCBlEA0J7+wK18p7GJIPlvtgjOpPGe6pGnGM4XpM06hPggNuSeghm6Q1ImKBcV4rno4fkTI31RD471m2ww==",
+  "dgSpecHash": "BLY8QP2H67ejC7kjrkpulw1UEMgIqC4a+OrVOo/evHGamCqMkTfoQGCs2hUJhOYHF0iZgBoLu526hh+vDEnqkQ==",
   "success": true,
-  "projectFilePath": "D:\\DOC IMPORTANT\\2023-2024\\archiLogiciel\\Zoo\\ZooManager.Tests\\ZooManager.Tests.csproj",
+  "projectFilePath": "D:\\DOC IMPORTANT\\2023-2024\\archiLogiciel\\Zoo\\craftmanship_Zoo\\ZooManager.Tests\\ZooManager.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\requi\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
     "C:\\Users\\requi\\.nuget\\packages\\microsoft.codecoverage\\17.7.1\\microsoft.codecoverage.17.7.1.nupkg.sha512",
