@@ -5,7 +5,7 @@ public interface IZoo
     void SupprimerEnclos(int enclosId);
     List<IEnclos> ObtenirEnclos();
 
-    void AjouterAnimal(IAnimal animal);
+    void AjouterAnimal(IAnimal animal, IEnclos enclos);
     void ModifierAnimal(IAnimal animal);
     void SupprimerAnimal(int animalId);
     List<IAnimal> ObtenirAnimaux();

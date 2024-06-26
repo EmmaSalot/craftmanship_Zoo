@@ -33,10 +33,37 @@ public class UnitTestZoo
             Id = 1,
             Nom = "Simba",
             Espece = Espece.Lion,
-            Age = 5
+            DateNaissance = new DateTime(2015, 1, 1)
         };
 
         Assert.True(enclos.PeutAccueillir(lion));
+    }
+
+    //Test pour le calcul de l'age d'un animal que l'on vient d'ajouter dans un enclos dans un zoo
+    [Fact]
+    public void GetAge_DoitRetourner4SiAnimalNeEn2020()
+    {
+        IZoo zoo = new Zoo();
+        IEnclos enclos = new Enclos
+        {
+            Id = 1,
+            Nom = "Enclos Grands Félins",
+            Taille = Taille.Grande,
+            EspecesPermises = new List<Espece> { Espece.Lion }
+        };
+        IAnimal lion = new Animal
+        {
+            Id = 1,
+            Nom = "Simba",
+            Espece = Espece.Lion,
+            DateNaissance = new DateTime(2020, 1, 1)
+        };
+        zoo.AjouterEnclos(enclos);
+        zoo.AjouterAnimal(lion, enclos);
+
+        int age = lion.GetAge();
+
+        Assert.Equal(4, age);
     }
 
     [Fact]
@@ -55,7 +82,7 @@ public class UnitTestZoo
             Id = 1,
             Nom = "Gigi",
             Espece = Espece.Girafe,
-            Age = 5
+            DateNaissance = new DateTime(2015, 1, 1)
         };
 
         Assert.False(enclos.PeutAccueillir(girafe));
@@ -116,7 +143,7 @@ public class UnitTestZoo
             Id = 1,
             Nom = "Simba",
             Espece = Espece.Lion,
-            Age = 5
+            DateNaissance = new DateTime(2015, 1, 1)
         };
         zoo.AjouterEnclos(enclos);
 
@@ -159,7 +186,7 @@ public class UnitTestZoo
             Id = 1,
             Nom = "Simba",
             Espece = Espece.Lion,
-            Age = 5
+            DateNaissance = new DateTime(2015, 1, 1)
         };
         enclos.Animaux.Add(lion);
         zoo.AjouterEnclos(enclos);

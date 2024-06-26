@@ -34,14 +34,11 @@ public class Zoo : IZoo
         return enclos;
     }
 
-    public void AjouterAnimal(IAnimal animal)
+    public void AjouterAnimal(IAnimal animal, IEnclos enclos)
     {
-        var enclosExist = this.enclos.FirstOrDefault(e => e.Id == animal.Enclos.Id);
-        if (enclosExist != null && enclosExist.PeutAccueillir(animal))
+        if (enclos.PeutAccueillir(animal))
         {
-            animal.Enclos = enclosExist;
-            this.animaux.Add(animal);
-            enclosExist.Animaux.Add(animal);
+            enclos.Animaux.Add(animal);
         }
     }
 
@@ -52,17 +49,7 @@ public class Zoo : IZoo
         {
             animalExist.Nom = animal.Nom;
             animalExist.Espece = animal.Espece;
-            animalExist.Age = animal.Age;
-            if (animal.Enclos.Id != animalExist.Enclos.Id)
-            {
-                var enclosExist = this.enclos.FirstOrDefault(e => e.Id == animal.Enclos.Id);
-                if (enclosExist != null && enclosExist.PeutAccueillir(animal))
-                {
-                    animalExist.Enclos.Animaux.Remove(animalExist);
-                    animalExist.Enclos = enclosExist;
-                    enclosExist.Animaux.Add(animalExist);
-                }
-            }
+            animalExist.DateNaissance = animal.DateNaissance;
         }
     }
 
@@ -71,7 +58,6 @@ public class Zoo : IZoo
         var animalExist = this.animaux.FirstOrDefault(a => a.Id == animalId);
         if (animalExist != null)
         {
-            animalExist.Enclos.Animaux.Remove(animalExist);
             this.animaux.Remove(animalExist);
         }
     }

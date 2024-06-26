@@ -2,8 +2,8 @@ public class Enclos : IEnclos
 {
     public int Id { get; set; }
     public string Nom { get; set; }
-    public string Taille { get; set; }
-    public List<string> EspecesPermises { get; set; } = new List<string>();
+    public Taille Taille { get; set; }
+    public List<Espece> EspecesPermises { get; set; } = new List<Espece>();
     public List<IAnimal> Animaux { get; set; } = new List<IAnimal>();
 
     public bool PeutAccueillir(IAnimal animal)
