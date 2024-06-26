@@ -8,8 +8,8 @@ public class UnitTestZoo
         {
             Id = 1,
             Nom = "Enclos Grands Félins",
-            Taille = "Grand",
-            EspecesPermises = new List<string> { "Lion" }
+            Taille = Taille.Grande,
+            EspecesPermises = new List<Espece> { Espece.Lion }
         };
 
         zoo.AjouterEnclos(enclos);
@@ -24,15 +24,15 @@ public class UnitTestZoo
         {
             Id = 1,
             Nom = "Enclos Grands Félins",
-            Taille = "Grand",
-            EspecesPermises = new List<string> { "Lion" }
+            Taille = Taille.Grande,
+            EspecesPermises = new List<Espece> { Espece.Lion }
         };
 
         IAnimal lion = new Animal
         {
             Id = 1,
             Nom = "Simba",
-            Espece = "Lion",
+            Espece = Espece.Lion,
             Age = 5
         };
 
@@ -46,15 +46,15 @@ public class UnitTestZoo
         {
             Id = 1,
             Nom = "Enclos Grands Félins",
-            Taille = "Grand",
-            EspecesPermises = new List<string> { "Lion" }
+            Taille = Taille.Grande,
+            EspecesPermises = new List<Espece> { Espece.Lion }
         };
 
         IAnimal girafe = new Animal
         {
             Id = 1,
             Nom = "Gigi",
-            Espece = "Girafe",
+            Espece = Espece.Girafe,
             Age = 5
         };
 
@@ -73,7 +73,7 @@ public class UnitTestZoo
             HeureFin = new TimeSpan(12, 0, 0),
             Enclos = new List<IEnclos>
             {
-                new Enclos { Id = 1, Nom = "Enclos Grands Félins", Taille = "Grand", EspecesPermises = new List<string> { "Lion" } }
+                new Enclos { Id = 1, Nom = "Enclos Grands Félins", Taille = Taille.Grande, EspecesPermises = new List<Espece> { Espece.Lion }}
             }
         };
 
@@ -93,7 +93,7 @@ public class UnitTestZoo
             HeureFin = new TimeSpan(12, 0, 0),
             Enclos = new List<IEnclos>
             {
-                new Enclos { Id = 1, Nom = "Enclos Grands Félins", Taille = "Grand", EspecesPermises = new List<string> { "Lion" } }
+                new Enclos { Id = 1, Nom = "Enclos Grands Félins", Taille = Taille.Grande, EspecesPermises = new List<Espece> { Espece.Lion }}
             }
         };
 
@@ -108,23 +108,20 @@ public class UnitTestZoo
         {
             Id = 1,
             Nom = "Enclos Grands Félins",
-            Taille = "Grand",
-            EspecesPermises = new List<string> { "Lion" }
+            Taille = Taille.Grande,
+            EspecesPermises =  new List<Espece> { Espece.Lion }
         };
-        zoo.AjouterEnclos(enclos);
-
         IAnimal lion = new Animal
         {
             Id = 1,
             Nom = "Simba",
-            Espece = "Lion",
-            Age = 5,
-            Enclos = enclos
+            Espece = Espece.Lion,
+            Age = 5
         };
+        zoo.AjouterEnclos(enclos);
 
-        zoo.AjouterAnimal(lion);
+        zoo.AjouterAnimal(lion, enclos);
 
-        Assert.True(zoo.ObtenirAnimaux().Contains(lion));
         Assert.True(enclos.Animaux.Contains(lion));
     }
 
@@ -136,8 +133,8 @@ public class UnitTestZoo
         {
             Id = 1,
             Nom = "Enclos Grands Félins",
-            Taille = "Grand",
-            EspecesPermises = new List<string> { "Lion" }
+            Taille = Taille.Moyenne,
+            EspecesPermises = new List<Espece> { Espece.Lion }
         };
         zoo.AjouterEnclos(enclos);
 
@@ -154,20 +151,18 @@ public class UnitTestZoo
         {
             Id = 1,
             Nom = "Enclos Grands Félins",
-            Taille = "Grand",
-            EspecesPermises = new List<string> { "Lion" }
+            Taille = Taille.Grande,
+            EspecesPermises = new List<Espece> { Espece.Lion }
         };
-        zoo.AjouterEnclos(enclos);
-
         IAnimal lion = new Animal
         {
             Id = 1,
             Nom = "Simba",
-            Espece = "Lion",
-            Age = 5,
-            Enclos = enclos
+            Espece = Espece.Lion,
+            Age = 5
         };
-        zoo.AjouterAnimal(lion);
+        enclos.Animaux.Add(lion);
+        zoo.AjouterEnclos(enclos);
 
         zoo.SupprimerEnclos(enclos.Id);
 
